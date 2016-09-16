@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Mustache Trimmer</title>
+    <!-- link href="lib/boostrap/css/bootstrap.min.css" rel="stylesheet" -->
+    <link href="main.css" rel="stylesheet">
+    <script src="node_modules/ace-builds/src/ace.js"></script>
+    <script src="node_modules/ace-builds/src/mode-json.js"></script>
+    <script src="node_modules/ace-builds/src/theme-twilight.js"></script>
+    <script src="editor.js"></script>
+</head>
+
+<body onload="onLoad()">
+<div id="header_fixed">
+    <button type="button" class="btn-sm btn-primary" onclick="openLoadFile()">json読込</button>
+    <button type="button" class="btn-sm btn-primary" onclick="saveFile()">json保存</button>
+    <button type="button" class="btn-sm btn-primary" onclick="renderMustache()">テンプレ変換</button>
+</div>
+<div id="footer_fixed"></div>
+<div id="input_area">
+    <div id="input_txt"></div>
+</div>
+</body>
+
+</html>
